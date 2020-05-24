@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63b01c6f-6bf8-47fb-9ec8-81bc98f9b00f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/SocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/SocketMultiThreadServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/SocketMultiThreadWithPoolServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/SocketSingleThreadServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/http/SocketOioHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/origin/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/origin/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleServiceClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleServiceServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/bio/rpc/ExampleServiceServerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/socket/nio/NioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/socket/nio/NioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/socket/nio/buf/BufferExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/socket/util/PropertiesUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socket/bio/SocketMultiThreadWithPoolServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socket/bio/SocketMultiThreadWithPoolServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/socket/bio/SocketMultiThreadWithPoolServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socket/bio/SocketMultiThreadWithPoolServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/socket/bio/rpc/ExampleServiceClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socket/bio/rpc/ExampleServiceClientImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,10 +46,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="socket.nio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\side_project\socket" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +72,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExampleClient">
+  <component name="RunManager" selected="Application.BufferExample">
+    <configuration name="BufferExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.nio.buf.BufferExample" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.nio.buf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExampleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.bio.rpc.ExampleClient" />
       <module name="socket" />
@@ -84,12 +99,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleServiceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.bio.rpc.ExampleServiceServer" />
+    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.nio.NioClient" />
       <module name="socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socket.bio.rpc.*" />
+          <option name="PATTERN" value="socket.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.nio.NioServer" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.util.PropertiesUtil" />
+      <module name="socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,8 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BufferExample" />
+        <item itemvalue="Application.NioClient" />
+        <item itemvalue="Application.NioServer" />
+        <item itemvalue="Application.PropertiesUtil" />
         <item itemvalue="Application.ExampleClient" />
-        <item itemvalue="Application.ExampleServiceServer" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590039405465</updated>
-      <workItem from="1590039408403" duration="8688000" />
+      <workItem from="1590039408403" duration="16097000" />
     </task>
     <servers />
   </component>
